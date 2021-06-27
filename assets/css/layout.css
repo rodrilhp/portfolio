@@ -1,39 +1,83 @@
-// --------------------------------------------
-// Topbar -------------------------------------
-// --------------------------------------------
+/* =============================================
+                   Navbar 
+==============================================*/
 
-nav .topbar {
+.navbar {
+	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	align-items: center;
+	width: 100vw;
 	height: 5rem;
-	max-width: 70rem;
-	background-color: rgba(255, 255, 255, 0.72);
-	filter: contrast(180%) blur(20px);
-	box-shadow: 0 10px 15px -3px rgba(0,0,0,0.04),0 4px 6px -2px rgba(0,0,0,0.02);
-	border-bottom: solid 1px #D7D7D7;
+	border-bottom: solid 1px var(--black10);
 }
 
-.testando {
-	color: red;
+.nav-content {
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
 }
 
-// --------------------------------------------
-// MainHeader ---------------------------------
-// --------------------------------------------
+.logo,
+.logo img {
+	margin: auto 0;
+	height: 32px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social a {
+	font-weight: 500;
+	color: var(--black80);
+	text-decoration: none;
+	background-color: var(--gray80);
+	border-radius: 4px;
+	padding: 8px 16px;
+	margin-left: 1.2rem;
+}
+
+/* =============================================
+                MainHeader 
+==============================================*/
+
+.header {
+	padding-top: 10rem;
+}
+
+.rodrigo-logo {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.avatar {
+	height: auto;
+	max-width: 80px;
+	border-radius: 40px;
+}
+
+.logotipo {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding-left: 1rem;
+}
 
 
-// --------------------------------------------
-// Skills -------------------------------------
-// --------------------------------------------
+/* =============================================
+                  Skills 
+==============================================*/
 
 
-// --------------------------------------------
-// Cases --------------------------------------
-// --------------------------------------------
+/* =============================================
+                  Cases 
+==============================================*/
 
 
-// --------------------------------------------
-// Footer -------------------------------------
-// --------------------------------------------
+
+/* =============================================
+                  Footer 
+==============================================*/

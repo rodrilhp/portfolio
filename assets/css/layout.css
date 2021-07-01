@@ -61,6 +61,7 @@
 .btn-container { margin: 4rem 0 3rem; }
 
 .btn-large {
+	font-size: 1.2rem;
 	border-radius: 32px;
 	padding: 1rem 1.8rem;
 }

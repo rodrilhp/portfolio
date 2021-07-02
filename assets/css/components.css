@@ -36,7 +36,7 @@
 
 :root {
     --title:  bold 8rem sans-serif;
-    --subtitle:  bold 2.6rem sans-serif;
+    --subtitle:  lighter 2rem sans-serif;
     --label:  bold 1.5rem sans-serif;
     --text:  lighter 1.3rem sans-serif;
 }
@@ -51,16 +51,14 @@
 ==============================================*/
 
 .btn-link {
+    font-size: 1.1rem;
     color: var(--black80);
-    border: 1px solid var(--black80);
     text-decoration: none;
-    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    transition: underline .3s ease-in-out;
+    padding-left: 2rem;
 }
 
-.btn-link:hover {
-    color: var(--white);
-    background-color: var(--black80);
-}
+.btn-link:hover { text-decoration: underline; }
 
 
 

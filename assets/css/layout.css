@@ -8,7 +8,7 @@
 	width: 100vw;
 	height: 5rem;
 	border-bottom: solid 1px var(--black10);
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.6);
 	backdrop-filter: saturate(180%) blur(10px);
 	z-index: 10;
 }
@@ -23,11 +23,6 @@
 .logo img {
 	margin: auto 0;
 	height: 32px;
-}
-
-.btn-small {
-	border-radius: 16px;
-	padding: 8px 16px; 
 }
 
 /* =============================================
@@ -55,15 +50,7 @@
 
 .intro-text { 
 	font: var(--text);
-	padding: 0 2rem;
-}
-
-.btn-container { margin: 4rem 0 3rem; }
-
-.btn-large {
-	font-size: 1.2rem;
-	border-radius: 32px;
-	padding: 1rem 1.8rem;
+	padding: 1rem 2rem 6rem;
 }
 
 /* =============================================
@@ -75,30 +62,29 @@
 	background-color: var(--gray40);
 }
 
-.skill-list {
+.layout-grid {
 	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 5rem 20rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
 	padding-bottom: 8rem;
 }
 
-.skill-header { display: flex; }
+.section-title { font-weight: 400; }
 
-.skill-image {
-	width: 60px;
-	height: 60px;
-	background-color: #97CDFF;
-	border-radius: 60px;
-	margin-right: 1rem;
+.skill { padding-right: 3rem; }
+
+.heading-small { font: var(--label); }
+
+.heading-big {
+	font-size: 3rem;
+	font-weight: 200;
 }
 
-.skill-title { font: var(--labels); }
-
-.skill-text {
-	max-width: 350px;
-	font: var(--content);
+.body-text {
+	font-weight: 300;
+	line-height: 1.8rem;
+	padding-bottom: 3rem;
 }
-
 
 /* =============================================
                   Cases 

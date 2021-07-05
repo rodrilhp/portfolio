@@ -61,8 +61,17 @@
 .btn-link:hover { text-decoration: underline; }
 
 
+/* =============================================
+                 Animations 
+==============================================*/
 
-
-
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+}
 
 

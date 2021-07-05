@@ -53,12 +53,36 @@
 	padding: 1rem 2rem 6rem;
 }
 
+.scroll-to-icon {
+	position: relative;
+	display: block;
+	margin: 3rem auto 1rem;
+	width: 20px;
+	height: 30px;
+	border-radius: 25px;
+	box-shadow: inset 0 0 0 2px var(--black80);
+	transition: all .3s;
+	transform: translateY(0);
+}
+
+.scroll-to-icon:after {
+	position: absolute;
+	content: '';
+	width: 4px;
+	height: 6px;
+	margin-left: -2px;
+	background-color: var(--black80);
+	top: 8px;
+	border-radius: 2px;
+	animation: scroll 1.5s infinite;
+}
+
 /* =============================================
                   Skills 
 ==============================================*/
 
 .skills {
-	margin-top: 8rem;
+	margin-top: 3rem;
 	background-color: var(--gray40);
 }
 
@@ -89,6 +113,8 @@
 /* =============================================
                   Cases 
 ==============================================*/
+
+#work:target { scroll-margin-top: 6rem }
 
 .cases { margin-top: 8rem; }
 

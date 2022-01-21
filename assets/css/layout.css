@@ -8,7 +8,7 @@
 	width: 100vw;
 	height: 5rem;
 	border-bottom: solid 1px var(--black10);
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.8);
 	backdrop-filter: saturate(180%) blur(10px);
 	z-index: 10;
 }
@@ -37,20 +37,9 @@
 	border-radius: 40px;
 }
 
-.logotipo {
-	font-weight: bold;
-	text-transform: uppercase;
-	padding-left: 1rem;
-}
-
 .intro-title {
 	font: var(--title);
 	letter-spacing: -8px;
-}
-
-.intro-text { 
-	font: var(--text);
-	padding: 1rem 2rem 6rem;
 }
 
 .scroll-to-icon {
@@ -70,7 +59,7 @@
 	content: '';
 	width: 4px;
 	height: 6px;
-	margin-left: -2px;
+	margin-left: 8px;
 	background-color: var(--black80);
 	top: 8px;
 	border-radius: 2px;
@@ -78,36 +67,20 @@
 }
 
 /* =============================================
-                  Skills 
+                  Intro
 ==============================================*/
 
-.skills {
+.intro {
 	margin-top: 3rem;
+	padding: 10rem 0;
 	background-color: var(--gray40);
 }
 
-.layout-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 16px;
-	padding-bottom: 8rem;
-}
-
-.section-title { font-weight: 400; }
-
-.skill { padding-right: 3rem; }
-
-.heading-small { font: var(--label); }
-
-.heading-big {
-	font-size: 3rem;
-	font-weight: 200;
-}
-
-.body-text {
+.intro-text {
+	font-size: 1.8rem;
 	font-weight: 300;
-	line-height: 1.8rem;
-	padding-bottom: 3rem;
+	line-height: 2;
+	margin: 1rem 0;
 }
 
 /* =============================================
@@ -116,10 +89,9 @@
 
 #work:target { scroll-margin-top: 6rem }
 
-.cases { margin-top: 8rem; }
+.cases { margin-top: 3rem; }
 
 .case-content {
-	width: 80%;
 	margin: 0 auto;
 	height: 500px;
 	border-radius: 1rem;
@@ -130,11 +102,49 @@
 .case-2 {	background-color: #7177D2;	}
 .case-3 {	background-color: #E6EFF7;	}
 
+
+/* =============================================
+                  	About 
+==============================================*/
+
+.row {
+	display: flex;
+}
+
+.left-text {
+	font-size: 1.8rem;
+	line-height: 1.2;
+}
+
+.right-text {
+	font-size: 1.2rem;
+	line-height: 1.4;
+}
+
+/* =============================================
+                  Skills 
+==============================================*/
+
+.skill-item {
+	font-size: 3rem;
+	font-weight: 600;
+	padding: 4rem 0;
+	border-bottom: 1px solid var(--black10);
+}
+
+.skill-item:last-child {
+	border-bottom: none;
+}
+
 /* =============================================
                   Footer 
 ==============================================*/
 
-footer { border-top: 1px solid var(--gray80); }
+.footer-text {
+	font-size: 1.4rem;
+	line-height: 1.2;
+	width: 80%;
+}
 
 .about-links { transition: all .3s ease-in-out; }
 
@@ -144,7 +154,14 @@ footer { border-top: 1px solid var(--gray80); }
 	transition: all .3s ease-in-out;
 }
 
-.about-links:hover a {
+.about-title {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 300;
+	color: var(--black40);
+}
+
+.about-links:hover * {
 	color: #fafafa;
 	transition: all .4s ease-in-out;
 }
@@ -152,51 +169,22 @@ footer { border-top: 1px solid var(--gray80); }
 .row-about {
 	display: grid;
 	max-width: 700px;
-	margin: 2rem auto 0;
+	margin: 2rem 0;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1rem;
 }
 
-.about-img {
-	width: 120px;
-	height: 120px;
-	border-radius: 4em;
-	background-color: #ffc6cf;
-	margin: 8rem auto 2rem;
-}
-
-.texts-about {
-	max-width: 800px;
-	margin: 1.5rem auto 4rem;
-}
-
 .color-link {
 	display: block;
-	padding: 0 3rem;
+	padding: 0 3rem 0 1rem;
 	color: var(--black80);
 	text-align: left;
 	text-decoration: none;
 }
 
-.about-title {
-	font-size: 16px;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: #a1a1a1;
-}
 
-.about-text {
-	font: var(--text);
-	line-height: 2rem;
-	text-align: left;
-}
 
-.copyright {
-	font-size: 1rem;
-	font-weight: 300;
-	padding: 8rem 0 4rem;
-}
+
 
 
 

@@ -4,7 +4,7 @@
 
 .center-container {
     width: 100%;
-    max-width: 72rem;
+    max-width: 56rem;
     margin: 0 auto;
 }
 
@@ -28,23 +28,24 @@
     --white:  rgba(255, 255, 255, 1);
 }
 
-
-
 /* =============================================
                  Fonts 
 ==============================================*/
 
 :root {
-    --title:  bold 8rem sans-serif;
-    --subtitle:  lighter 2rem sans-serif;
+    --title:  bold 6rem sans-serif;
+    --subtitle:  normal 2.6rem sans-serif;
     --label:  bold 1.5rem sans-serif;
     --text:  lighter 1.3rem sans-serif;
 }
 
 .section-title {
     font: var(--subtitle);
-    padding: 6rem 0 1rem;
+    margin-top: 8rem;
+    padding: 1rem 0 4rem;
+    border-top: 1px solid #000;
 }
+
 
 /* =============================================
                 Buttons 

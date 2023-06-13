@@ -1,22 +1,5 @@
 /* =============================================
-                Position 
-==============================================*/
-
-.center-container {
-    width: 100%;
-    max-width: 56rem;
-    margin: 0 auto;
-}
-
-.center-content { text-align: center; }
-
-.flex-center { display: flex; align-items: center; justify-content: center;}
-
-.vertical { margin: auto 0; }
-
-
-/* =============================================
-                 Colors 
+                Variables 
 ==============================================*/
 
 :root {
@@ -26,40 +9,16 @@
     --gray80: rgba(235, 235, 235, .8);
     --gray40: rgba(235, 235, 235, .4);
     --white:  rgba(255, 255, 255, 1);
+
+    --title:  600 clamp(28px, 8vw, 32px) 'Crimson Text', serif;
+    --subtitle:  600 clamp(24px, 8vw, 28px) 'Crimson Text', serif;
+    --label:  italic 400 14px/18px 'Crimson Text', serif;
+    --strong:  600 clamp(20px, 6vw, 24px) 'Crimson Text', serif;
 }
 
-/* =============================================
-                 Fonts 
-==============================================*/
+.center-container { width: clamp(calc(100vw - 48px), 80%, 700px);}
 
-:root {
-    --title:  bold 6rem sans-serif;
-    --subtitle:  normal 2.6rem sans-serif;
-    --label:  bold 1.5rem sans-serif;
-    --text:  lighter 1.3rem sans-serif;
-}
-
-.section-title {
-    font: var(--subtitle);
-    margin-top: 8rem;
-    padding: 1rem 0 4rem;
-    border-top: 1px solid #000;
-}
-
-
-/* =============================================
-                Buttons 
-==============================================*/
-
-.btn-link {
-    font-size: 1.1rem;
-    color: var(--black80);
-    text-decoration: none;
-    transition: underline .3s ease-in-out;
-    padding-left: 2rem;
-}
-
-.btn-link:hover { text-decoration: underline; }
+.center-content { display: grid; place-content: center; text-align: center;}
 
 
 /* =============================================
@@ -74,5 +33,3 @@
         transform: translateY(7px);
     }
 }
-
-

@@ -1,51 +1,18 @@
 /* =============================================
-                   Navbar 
-==============================================*/
-
-.navbar {
-	display: flex;
-	position: fixed;
-	width: 100vw;
-	height: 5rem;
-	border-bottom: solid 1px var(--black10);
-	background-color: rgba(255, 255, 255, 0.8);
-	backdrop-filter: saturate(180%) blur(10px);
-	z-index: 10;
-}
-
-.nav-content {
-	display: flex;
-	justify-content: space-between;
-	z-index: 11;
-}
-
-.logo,
-.logo img {
-	margin: auto 0;
-	height: 32px;
-}
-
-/* =============================================
                 MainHeader 
 ==============================================*/
 
-.header { padding-top: 12rem; }
+.header { padding-top: 8rem; gap: 64px;}
 
-.avatar {
-	height: auto;
-	max-width: 80px;
-	border-radius: 40px;
-}
+.intro-title { font: var(--title); }
 
-.intro-title {
-	font: var(--title);
-	letter-spacing: -8px;
-}
+.rodrigo-logo { height: clamp(40px, 11vw, 48px)}
+
+.logo { height: 100%; }
 
 .scroll-to-icon {
 	position: relative;
-	display: block;
-	margin: 3rem auto 1rem;
+	margin: 4rem auto 2rem;
 	width: 20px;
 	height: 30px;
 	border-radius: 25px;
@@ -59,94 +26,82 @@
 	content: '';
 	width: 4px;
 	height: 6px;
-	margin-left: 8px;
+	margin-left: -2px;
 	background-color: var(--black80);
 	top: 8px;
 	border-radius: 2px;
 	animation: scroll 1.5s infinite;
 }
 
-/* =============================================
-                  Intro
-==============================================*/
-
-.intro {
-	margin-top: 3rem;
-	padding: 10rem 0;
-	background-color: var(--gray40);
-}
-
-.intro-text {
-	font-size: 1.8rem;
-	font-weight: 300;
-	line-height: 2;
-	margin: 1rem 0;
-}
 
 /* =============================================
                   Cases 
 ==============================================*/
 
-#work:target { scroll-margin-top: 6rem }
-
-.cases { margin-top: 3rem; }
+.cases { 
+	display: grid;
+	grid-gap: 32px;
+}
 
 .case-content {
-	margin: 0 auto;
-	height: 500px;
-	border-radius: 1rem;
-	margin-bottom: 6rem;
+	background-color: var(--gray80);
+	height: 260px;
 }
 
-.case-1 {	background-color: #FFC6CF;	}
-.case-2 {	background-color: #7177D2;	}
-.case-3 {	background-color: #E6EFF7;	}
-
-
 /* =============================================
-                  	About 
+                  	Past 
 ==============================================*/
 
-.row {
+.items {
+	display: grid;
+	grid-gap: 32px;
+	padding-top: 20px;
+}
+
+.item {
+	display: grid;
+	grid-gap: 16px;
+}
+
+.item-title {
 	display: flex;
-}
-
-.left-text {
-	font-size: 1.8rem;
-	line-height: 1.2;
-}
-
-.right-text {
-	font-size: 1.2rem;
-	line-height: 1.4;
+	justify-content: space-between;
 }
 
 /* =============================================
-                  Skills 
+                  About 
 ==============================================*/
 
-.skill-item {
-	font-size: 3rem;
-	font-weight: 600;
-	padding: 4rem 0;
-	border-bottom: 1px solid var(--black10);
+.about {
+	display: grid;
+	grid-gap: 24px;
+	padding-top: 20px;
 }
 
-.skill-item:last-child {
-	border-bottom: none;
+.about p:first-child {
+	font: var(--strong);
 }
+
 
 /* =============================================
                   Footer 
 ==============================================*/
 
-.footer-text {
-	font-size: 1.4rem;
-	line-height: 1.2;
-	width: 80%;
+.footer-items {
+	display: grid;
+	grid-gap: 32px;
+	margin-bottom: 20vw;
 }
 
-.about-links { transition: all .3s ease-in-out; }
+.item-link {
+	transition: all .3s ease-in-out; 
+	text-decoration: none;
+	color: var(--black80);
+}
+
+.about-links {
+	padding: 2px 8px;
+}
 
 .about-links:hover {
 	background: #191919;
@@ -155,40 +110,13 @@
 }
 
 .about-title {
+	margin: 0 0 8px;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 20px;
 	font-weight: 300;
-	color: var(--black40);
 }
 
 .about-links:hover * {
 	color: #fafafa;
 	transition: all .4s ease-in-out;
 }
-
-.row-about {
-	display: grid;
-	max-width: 700px;
-	margin: 2rem 0;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1rem;
-}
-
-.color-link {
-	display: block;
-	padding: 0 3rem 0 1rem;
-	color: var(--black80);
-	text-align: left;
-	text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
